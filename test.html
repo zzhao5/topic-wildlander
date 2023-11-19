@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="email=no">
+  <link rel="stylesheet" href="./css/index.css" />
+  <title>威兰达陪你去有风的地方</title>
+  <script>
+    function setFS() {
+      var html = document.querySelector('html');
+      var width = html.getBoundingClientRect().width;
+      html.style.fontSize = width / 750 + 'px';
+    }
+    setFS();
+    window.addEventListener('resize', setFS);
+  </script>
+  <script>
+    (function (w, d, s, q, i) {
+      w[q] = w[q] || [];
+      var f = d.getElementsByTagName(s)[0], j = d.createElement(s);
+      j.async = true;
+      j.id = 'beacon-aplus';
+      j.src = 'https://d.alicdn.com/alilog/mlog/aplus/' + i + '.js';
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'aplus_queue', '203467608');
+
+    //集成应用的appKey
+    aplus_queue.push({
+      action: 'aplus.setMetaInfo',
+      arguments: ['appKey', '64b0fe2fa1a164591b4c4562']
+    });
+  </script>
+  <script src='https://res.wx.qq.com/open/js/jweixin-1.6.0.js' type='text/javascript'></script>
+  <script src="https://s1.xmcdn.com/yx/web-jssdk/1.5.1/dist_cdn/xmsdk.min.js"></script>
+  <script src="https://s1.xmcdn.com/lib/jssdk/1.1.1/build/ly.js"></script>
+  
+</head>
+
+<body>
+  <div class="fn-hide"><img src="https://www.adtais.com/ximalaya/wildlander/images/pic_share.jpg" alt="" /></div>
+  <div class="wrap">
+    <header class="header">
+      <nav class="nav">
+        <span class="nav-item active"></span>
+        <span class="nav-item"></span>
+        <span class="nav-item"></span>
+        <span class="nav-item"></span>
+      </nav>
+    </header>
+    <section class="content">
+      <div class="content-item">
+        <div class="content-item__details">
+          <div class="content-item__img">
+            <img src="./images/head_1.jpg" alt="">
+            <span>Fit4life</span>
+          </div>
+          <div class="content-item__text">
+            我们总是在欣赏异乡的风景，却忽视了在自己的家乡，那些自己觉得稀松平常的事物，原来也独具风情。我们如何向别人推荐自己的家乡呢，是那家自小就一直在吃的老字号，还是回忆里最印象深刻的乐园，来和主播一起发现宝藏...
+          </div>
+        </div>
+      </div>
+      <div class="content-item fn-hide">
+        <div class="content-item__details">
+          <div class="content-item__img">
+            <img src="./images/head_2.jpg" alt="">
+            <span>壮游者</span>
+          </div>
+          <div class="content-item__text">
+            去大自然中走走，才能发现这世界多么美好。当我们在城市的喧嚣中感到身心俱疲，不妨跟随主播的声音一起去看山看水，看这个世界最本质、最奇妙的样子，来一场治愈心灵的声音漫游。</div>
+        </div>
+      </div>
+      <div class="content-item fn-hide">
+        <div class="content-item__details">
+          <div class="content-item__img">
+            <img src="./images/head_3.jpg" alt="">
+            <span>地理狗看世界</span>
+          </div>
+          <div class="content-item__text">有一些食物，一吃便能尝出它的诞生地，原来美食的背后还有这么多学问。在品尝地方美食的同时，来听主播说说这些美食身上的门道，让你吃得更明白，玩得更充实。
+          </div>
+        </div>
+      </div>
+      <div class="content-item fn-hide">
+        <div class="content-item__details">
+          <div class="content-item__img">
+            <img src="./images/head_4.jpg" alt="">
+            <span>刘旸教主单口喜剧</span>
+          </div>
+          <div class="content-item__text">生活总是在想方设法地磨去我们身上那股劲儿，但这里总能让我们听到灵魂的自由，感受到自己年轻的跳动。为啥一定要趁年轻去一次livehouse？来听教主怎么说！
+          </div>
+        </div>
+      </div>
+      <div class="content-item__audio">
+        <div class="audio__process">
+          <p id="audio_line"></p>
+        </div>
+        <div class="audio__btn" data-index="0"></div>
+      </div>
+    </section>
+    <div class="more">
+      <!-- Swiper -->
+      <div class="focus">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/pic_1.jpg" /></div>
+            <div class="swiper-slide"><img src="./images/pic_2.jpg" /></div>
+            <div class="swiper-slide"><img src="./images/pic_3.jpg" /></div>
+            <div class="swiper-slide"><img src="./images/pic_4.jpg" /></div>
+            <div class="swiper-slide"><img src="./images/pic_5.jpg" /></div>
+            <div class="swiper-slide"><img src="./images/pic_6.jpg" /></div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="btn">
+        <div class="btn__share"></div>
+        <a class="btn__more" href="https://www.gac-toyota.com.cn/vehicles/wildlander/m"></a>
+      </div>
+      <div class="banner">
+        <a id="banner_pic" href=""><img src="./images/pic_banner.jpg" alt="" /></a>
+      </div>
+
+    </div>
+    <div class="sharePic fn-hide">
+      <i class="mask"></i>
+      <img src="./images/share.jpg" alt="" />
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="./js/jquery-3.7.0.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    $(function () {
+      var basicSiteUrl = 'https://www.adtais.com';
+      var inApp = window.navigator.userAgent.toLowerCase().indexOf('iting') > -1; //是否在APP内
+      var opt = {
+        title: '威兰达听见世界的美好',
+        desc: '威兰达陪你一起去有风的地方，听见世界的美好',
+        img: basicSiteUrl + '/ximalaya/wildlander/images/pic_share.jpg',
+        link: basicSiteUrl + '/ximalaya/wildlander/',
+      };
+      var tabIndex = 0;
+      var audio_btn = $('.audio__btn');
+      var audio_line = $('#audio_line');
+
+      var XMplayer = window.xmsdk.XMplayer;
+      var playlist = [649207902, 201701813, 648332226, 308682378];
+
+      var player = new XMplayer({
+        app_key: '57cba1d0af83f9820a83fac68f6d4618', // 必传，官方提供的 app_key：b617866c20482d133d5de66fceb37da3 仅供测试，有调用次数限制，上线需替换为自己的 app_key。
+        sig_url: basicSiteUrl + '/tais-boot/sys/xmlyShareSig', // 免登录授权，必须传 sig_url，和 get_access_token 互斥
+        debug: false, // 是否在控制台打印日志
+        playMode: 'single',
+        playlist: playlist,
+        autoUnlock: false,
+      });
+      
+      var nowTime = 0;
+      player.on('timeupdate', function (position, sound) {
+        if (position - nowTime > 1) {
+          var percent = position / sound.duration;
+          if (percent >= 0.99) {
+            audio_btn.removeClass('playing');
+            percent = 1;
+          }
+          if ( parseInt(audio_btn.data('index')) === -1) {
+            audio_line.css('width', '0%');
+            nowTime = 0;
+          } else {
+            audio_line.css('width', percent * 100 + '%');
+            nowTime = position;
+          }
+          console.log('timeupdate', percent)
+        }
+      });
+
+      audio_btn.click(function (e) {
+        e.stopPropagation();
+        if (audio_btn.hasClass('playing')) {
+          // 暂停播放
+          player.pause();
+          audio_btn.removeClass('playing');
+        } else {
+          if (parseInt(audio_btn.data('index')) === tabIndex) {
+            player.play();
+          } else {
+            audio_btn.data('index', tabIndex);
+            player.playByIndex(tabIndex);
+          }
+          audio_btn.addClass('playing');
+        }
+      });
+
+      // 切换 tab
+      var content = $('.content-item');
+      $('.nav-item').on('click', function () {
+        if ($(this).hasClass('active')) {
+          return;
+        }
+        var index = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        content.addClass('fn-hide').eq(index).removeClass('fn-hide');
+        audio_btn.removeClass('playing');
+        player.stop();
+        tabIndex = index;
+        audio_btn.data('index', -1);
+        audio_line.css('width', '0%');
+        nowTime = 0;
+      });
+
+      function setShare () {
+        ly.invokeApp('util.share', {
+          channel: ['weixin', 'weixinGroup', 'xmTimeline', 'xmGroup', 'qzone', 'qq', 'tSina'],
+          title: opt.title,
+          desc: opt.desc,
+          link: opt.link,
+          imgUrl: opt.img,
+          type: 'link',
+          success: function (data) {
+          },
+        });
+      }
+
+      var wx_xhr = new XMLHttpRequest();
+      wx_xhr.open('post', basicSiteUrl + '/tais-boot/sys/weixinAllJsAuthorization', true);
+      wx_xhr.setRequestHeader('Content-Type', 'application/json');
+      wx_xhr.send(JSON.stringify({codeLink: window.location.href.split('#')[0]}));
+      wx_xhr.onreadystatechange = function () {
+        if (wx_xhr.readyState == 4 && wx_xhr.status == 200) {
+          var data = JSON.parse(wx_xhr.responseText);
+          if (data.code == 200) {
+            wx.config({
+              debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+              appId: data.result.appId, // 必填，公众号的唯一标识
+              timestamp: data.result.timestamp, // 必填，生成签名的时间戳
+              nonceStr: data.result.nonceStr, // 必填，生成签名的随机串
+              signature: data.result.signature, // 必填，签名
+              jsApiList: ['updateTimelineShareData', 'updateAppMessageShareData'],
+            });
+            wx.ready(function () {
+              wx.updateTimelineShareData({
+                title: opt.title, // 分享标题
+                link: opt.link, // 分享链接
+                imgUrl: opt.img, // 分享图标
+              });
+              wx.updateAppMessageShareData({
+                title: opt.title, // 分享标题
+                desc: opt.desc, // 分享描述
+                link: opt.link, // 分享链接
+                imgUrl: opt.img,
+              });
+            });
+
+          } else {
+            alert('分享错误！');
+          }
+        }
+      };
+      
+      var ly_xhr = new XMLHttpRequest();
+      ly_xhr.open('post', basicSiteUrl + '/tais-boot/sys/xmlyZzShareJsAuthorization', true);
+      ly_xhr.setRequestHeader('Content-Type', 'application/json')
+      ly_xhr.send(JSON.stringify({codeLink: opt.link}));
+      ly_xhr.onreadystatechange = function () {
+        if (ly_xhr.readyState == 4 && ly_xhr.status == 200) {
+          var data = JSON.parse(ly_xhr.responseText);
+          if (data.code == 200) {
+            var apiList = ['nav.setMenu, util.share'];
+            ly.config({
+              timestamp: data.result.timestamp,
+              nonce: data.result.nonceStr,
+              signature: data.result.signature,
+              appId: data.result.appId, // 必填，应用ID
+              apiList: apiList,
+            });
+            ly.ready(function () {
+              ly.invokeApp('nav.setMenu', {
+                items: [
+                  {
+                    id: '1',
+                    icon: 'share',
+                    text: '分享',
+                  },
+                ],
+                success() {
+
+                  setShare();
+                },
+              });
+            });
+            ly.error(function (err) {
+            });
+          }
+        }
+      }
+
+      $('#banner_pic').attr('href', inApp ? 'iting://open?msg_type=280&metadataValueId=1237646&pageType=new&userType=user'
+      : 'https://m.ximalaya.com/gatekeeper/topic-share-h5?tagId=1237646');
+      
+      var sharePic = $('.sharePic');
+      $('.btn__share').on('click', function() {
+        sharePic.removeClass('fn-hide');
+        $('body').css('overflow', 'hidden');
+      });
+      $('.sharePic .mask').on('click', function() {
+        sharePic.addClass('fn-hide');
+        $('body').css('overflow', '');
+      });
+
+      // 上报 PV
+      aplus_queue.push({
+        action: 'aplus.sendPV',
+        arguments: [{ is_auto: false }, {
+          // 这里传参
+        }]
+      });
+
+      // swiper 配置
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        loop: true,
+      });
+    });
+  </script>
+</body>
+
+</html>
